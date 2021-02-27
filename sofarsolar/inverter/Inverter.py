@@ -30,9 +30,9 @@ def load_config():
     config_paths = [mydir + '/config-org.ini']
     if os.path.exists(mydir + '/config/config.ini'):
         config_paths.append(mydir + '/config/config.ini')
-    if ext_config_path and os.path.exists(ext_config_path):
-        config_paths.append(ext_config_path)
-    config = anyconfig.load(config_paths, ac_merge=anyconfig.MS_REPLACE)
+#    if ext_config_path and os.path.exists(ext_config_path):
+#        config_paths.append(ext_config_path)
+    config = anyconfig.load(config_paths)
     return config
 
 

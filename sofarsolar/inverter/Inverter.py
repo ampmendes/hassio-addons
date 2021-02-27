@@ -32,7 +32,7 @@ def load_config():
         config_paths.append(mydir + '/config/config.ini')
     if ext_config_path and os.path.exists(ext_config_path):
         config_paths.append(ext_config_path)
-    config = anyconfig.load(config_paths)
+    config = anyconfig.load(config_paths, ac_parser="yaml")
     return config
 
 

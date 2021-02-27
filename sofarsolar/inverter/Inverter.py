@@ -8,7 +8,6 @@ import MqttClient
 import logging
 import json
 import pkg_resources
-pkg_resources.require("anyconfig==0.9.11")
 import anyconfig
 
 
